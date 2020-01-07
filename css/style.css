@@ -1,23 +1,20 @@
 /* ---------- SCSS VARIABLES ---------- */
-$violet: hsl(257, 40%, 49%);
-
 /* ---------- BACKGROUND ---------- */
 body {
   background-image: url(../images/bg-desktop.svg);
-  background-color: $violet;
+  background-color: #674baf;
 }
 
 /* ---------- HEADER ---------- */
-
 /* ---------- LEFT COLUMN ---------- */
-
 /* ---------- RIGHT COLUMN ---------- */
-
 /* ---------- FOOTER ---------- */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
 }
+/*# sourceMappingURL=style.css.map */
