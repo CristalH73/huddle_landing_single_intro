@@ -24,23 +24,32 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/33f4b73c40.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <div class="container-fluid">
-      <header class="row">
-        <img src="images/logo.svg" alt="huddle logo" />
+      <header>
+        <img
+          class="logo img-responsive"
+          src="images/logo.svg"
+          alt="huddle logo"
+        />
       </header>
       <main class="row">
-        <div class="col-6">
+        <div class="left col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <img
+            class="illustration img-responsive"
             src="images/illustration-mockups.svg"
             alt="loading website on desktop screen and mobile screen"
           />
         </div>
-        <div class="col-6">
+        <div class="right col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <h1 class="title">Build The Community Your Fans Will Love</h1>
-          <p>
+          <p class="info">
             Huddle re-imagines the way we build communities. You have a voice,
             but so does your audience. Create connections with your users as you
             engage in genuine discussion.
@@ -48,17 +57,25 @@
           <button class="btn btn-primary">Register</button>
         </div>
       </main>
-      <footer>
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Cristal Hernandez</a>.
-        </p>
 
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
+      <footer>
+        <div class="row">
+          <div class="col-xs-12 col-md-10">
+            <p class="attribution">
+              Challenge by
+              <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+              >. Coded by <a href="#">Cristal Hernandez</a>.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-2">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
       </footer>
     </div>
   </body>

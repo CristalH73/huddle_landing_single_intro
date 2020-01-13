@@ -1,23 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /* ---------- SCSS VARIABLES ---------- */
 $violet: hsl(257, 40%, 49%);
+$pink: hsl(315, 86%, 64%);
 
 /* ---------- BACKGROUND ---------- */
+html,
 body {
-  background-image: url(../images/bg-desktop.svg);
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: no-repeat url(../images/bg-desktop.svg);
   background-color: $violet;
 }
 
+.container-fluid {
+  padding: 3rem 4rem 2rem 4rem;
+}
 /* ---------- HEADER ---------- */
+header {
+  margin-bottom: 4rem;
+}
 
 /* ---------- LEFT COLUMN ---------- */
-
+.illustration {
+  width: 95%;
+}
 /* ---------- RIGHT COLUMN ---------- */
+.right {
+  color: white;
+  padding: 4rem 4rem 0 4rem;
+}
 
+.title {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 2.7rem;
+  line-height: 3.5rem;
+}
+
+.info {
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  opacity: 0.7;
+}
+
+.btn {
+  font-family: "Poppins";
+  background-color: white;
+  color: $violet;
+  padding: 0.7rem 3.5rem;
+  border-radius: 40px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: $pink;
+  border: 1px solid $pink;
+}
 /* ---------- FOOTER ---------- */
+footer {
+  padding-top: 2rem;
+}
 .attribution {
-  font-size: 11px;
+  font-size: 0.7rem;
   text-align: center;
+  color: white;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: $pink;
+  font-size: 0.8rem;
+}
+
+i {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+}
+
+.fa-facebook-f {
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 }
