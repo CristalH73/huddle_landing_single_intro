@@ -9,8 +9,12 @@ body {
 }
 
 body {
-  background: no-repeat url(../images/bg-mobile.svg);
   background-color: #674baf;
+}
+
+.mobile-bg {
+  position: absolute;
+  width: 100%;
 }
 
 .container-fluid {
@@ -42,14 +46,13 @@ header {
   font-family: "Poppins";
   font-weight: 700;
   font-size: 1.6rem;
-  /*font-size: 7vw; */
   line-height: 2.5rem;
 }
 
 .info {
   font-family: "Open Sans";
   font-size: 1.17rem;
-  /*font-size: 4.2vw;*/
+  opacity: 0.8;
 }
 
 .btn {
@@ -60,6 +63,8 @@ header {
   margin-top: 0.8rem;
   padding: 0.7rem 5rem;
   border-radius: 40px;
+  -webkit-box-shadow: 2px 5px 5px 2px #5d439d;
+          box-shadow: 2px 5px 5px 2px #5d439d;
 }
 
 .btn:hover {
@@ -101,19 +106,36 @@ i {
 }
 
 /* ---------- MEDIA QUERIES ---------- */
-@media (min-width: 576px) {
-  body {
-    background: no-repeat url(../images/bg-desktop.svg);
-    background-color: #674baf;
-  }
+@media screen and (min-width: 576px) {
   .illustration {
     width: 85%;
   }
 }
 
 @media (min-width: 768px) {
+  body {
+    background: no-repeat fixed url(../images/bg-desktop.svg);
+    background-color: #674baf;
+  }
+  .mobile-bg {
+    display: none;
+  }
   .logo {
     width: 250px;
+  }
+  .illustration {
+    width: 100%;
+  }
+  .right {
+    padding: 0 2rem;
+    text-align: left;
+  }
+  .info {
+    font-size: 1.4vw;
+  }
+  .btn {
+    padding: 0.7rem 3.5rem;
+    border-radius: 40px;
   }
   .icons {
     text-align: right;
@@ -124,9 +146,6 @@ i {
   .container-fluid {
     padding: 3rem 4rem 2rem 4rem;
   }
-  .illustration {
-    width: 100%;
-  }
   .right {
     padding: 0 4rem;
     text-align: left;
@@ -136,13 +155,7 @@ i {
     line-height: 3.5rem;
   }
   .info {
-    /*font-size: 1.25rem;*/
     font-size: 1.33vw;
-    opacity: 0.8;
-  }
-  .btn {
-    padding: 0.7rem 3.5rem;
-    border-radius: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
